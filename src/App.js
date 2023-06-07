@@ -1,4 +1,5 @@
 import './App.css';
+import { useEffect } from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import AboutMe from './components/AboutMe';
 import Navigation from './components/Navigation';
@@ -6,6 +7,7 @@ import Findings from './components/Findings';
 import Projects from './components/Projects';
 
 function App() {
+
   return (
     <BrowserRouter>
     <div className="App">
