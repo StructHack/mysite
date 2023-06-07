@@ -1,0 +1,55 @@
+
+.game-container{
+    width: 600px;
+    margin: 0 auto;
+    display: inline-flex;
+    direction: row;
+    justify-content: center;
+    align-items: flex-start ;
+    gap:3em;
+    flex-wrap: wrap;
+}
+
+.game-container>div{
+   display: inline-block;
+   max-width: 150px;
+   height: 180px;
+   background-color: #111;
+   transition: 0.3s;
+}
+
+.game-container>div:hover{
+    box-shadow: 1px 1px 5px black;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.game-container>div>.game-img{
+    height: 150px;    
+    border-radius: 5px;
+    margin:0
+    /* overflow: hidden; */
+}
+.game-container>div{
+    min-width: 120px;
+}
+.game-container>div>.game-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.game-container>div>.game-title{
+    line-height: 2em;
+    margin: 0;
+}
+
+
+@media screen and (max-width: 600px){   
+    .game-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width:100%
+    }
+}
